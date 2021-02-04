@@ -1,6 +1,13 @@
 new Vue({
     el:'#vue-app',
     data: {
-      name:'Yaqoob'
+      error: false,
+      success: false
+    },
+    methods: {
+
+    },
+    computed:{
+
     }
 });
