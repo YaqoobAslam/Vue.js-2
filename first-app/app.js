@@ -1,34 +1,27 @@
+Vue.component('greeting', {
+
+  template: '<p>Hey there I am {{name}} . <button v-on:click="changeName"> Change name </button> </p>',
+  data:function(){
+    return {
+      name:'Yoshi'
+    }
+  },
+  methods: {
+    changeName: function(){
+      this.name = 'Mario';
+    }
+  }
+});
+
+
+
 var one = new Vue({
     el:'#vue-app-one',
-    data: {
-      Title:'Vue App One'
-    },
-    methods: {
 
-    },
-    computed:{
-      greet: function(){
-        return 'Hello from app one :)';
-      }
-    }
 });
 
 
 var two = new Vue({
     el:'#vue-app-two',
-    data: {
-      Title:'Vue App Two'
-    },
-    methods: {
-      changeTitle: function(){
-        one.Title = 'Title Changed';
-      }
-    },
-    computed:{
-      greet: function(){
-        return 'Yo dudes, this is app 2 speaking to ya:)';
-      }
-    }
-});
 
-two.Title = "Changed from outside";
+});

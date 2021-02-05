@@ -10,11 +10,11 @@
   background: url(img/bag-burst.png) center no-repeat;
   background-size: 80%;
 }
-h1 {
+/* h1 {
   text-align: center;
   position:relative;
-     bottom:-46px;  
-}
+     bottom:-46px;
+} */
 
 #bag-health {
   width: 200px;
