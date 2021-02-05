@@ -2,34 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Vue App</title>
+    <title>Punch Game</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   </head>
   <body>
 
     <div id="vue-app">
-      <h1>Looping Through lists</h1>
-        <ul>
-          <li v-for="(character, index) in characters">{{index}}- {{character}}</li>
-        </ul>
-        <ul>
-          <li v-for="(ninja, index) in ninjas">{{index}} - {{ninja.name}} - {{ninja.age}}</<li>
-        </ul>
+      <h1>Punch Game</h1>
+      <!-- bag image -->
+      <div id="bag" v-bind:class="{burst: ended===true }"></div>
 
 
+      <!-- bag health -->
+      <div id="bag-health">
+        <div v-bind:style="{width: health + '%'}"></div>
+      </div>
 
-        <template v-for="(ninja, index) in ninjas">
-          <h3>{{index}} - {{ninja.name}}</h3>
-          <p>{{ninja.age}}</p>
-        </template>
-
-
-        <template v-for="ninja in ninjas">
-            <div v-for="(val, key) in ninja">
-              <p>{{key}} - {{val}}</p>
-            </div>
-        </template>
+      <!--game control -->
+      <div id="controls">
+        <button v-on:click="punch" v-show="ended === false">Punch</button>
+        <button v-on:click="restart">Restart</button>
+      </div>
 
     </div>
 
