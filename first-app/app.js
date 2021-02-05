@@ -30,3 +30,5 @@ var two = new Vue({
       }
     }
 });
+
+two.Title = "Changed from outside";
