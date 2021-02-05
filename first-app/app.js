@@ -1,9 +1,13 @@
-Vue.component('greeting', {
+// var data = {
+//   name: 'Yoshi'
+// }
 
+Vue.component('greeting', {
   template: '<p>Hey there I am {{name}} . <button v-on:click="changeName"> Change name </button> </p>',
   data:function(){
+    // return data;
     return {
-      name:'Yoshi'
+      name: 'Yoshi'
     }
   },
   methods: {
