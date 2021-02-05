@@ -7,7 +7,12 @@
 
 
 <script>
+import Ninjas from './Ninjas.vue'
+
 export default {
+components: {
+  'ninjas': Ninjas
+},
   data () {
     return {
       title: 'Ninja App'
@@ -17,4 +22,8 @@ export default {
 </script>
 
 
-<style> </style>
+<style scoped>
+  h1{
+    color: purple;
+  }
+</style>
