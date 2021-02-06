@@ -30,7 +30,29 @@ props:{
     deleteNinja: function(){
     this.ninjas.pop();
     }
+  },
+  //life cycle hooks
+
+  beforeCreate(){
+    alert('beforeCreated');
+  },
+
+  created(){
+    alert('created');
+  },
+  beforeMount(){
+    alert('beforeMount');
+  },
+  mounted(){
+    alert('mounted');
+  },
+  beforeUpdate(){
+    alert('beforeUpdate');
+  },
+  updated(){
+  alert('Updated');
   }
+
 }
 </script>
 
