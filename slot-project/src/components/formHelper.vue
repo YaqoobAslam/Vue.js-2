@@ -1,6 +1,8 @@
 <template>
   <div>
+    <slot name="title"></slot>
     <h1>I am the form Helper</h1>
+    <slot name="text"></slot>
   </div>
 </template>
 
@@ -15,5 +17,7 @@ export default {
 
 
 <style scoped>
-
+h1{
+color: red;
+}
 </style>

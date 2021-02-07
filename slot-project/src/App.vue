@@ -1,6 +1,9 @@
 <template>
   <div>
-    <form-helper></form-helper>
+    <form-helper>
+      <h2 slot="title">{{title}}</h2>
+      <p slot="text">I am the paragraph text from slot </p>
+    </form-helper>
   </div>
 </template>
 
@@ -11,6 +14,14 @@ export default {
   name: 'App',
   components: {
     'form-helper': formHelper
+  },
+  data(){
+    return {
+      title: 'I am a dynamic slot title'
+    }
+  },
+  methods:{
+
   }
 }
 </script>
