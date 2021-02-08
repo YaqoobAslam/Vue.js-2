@@ -1,18 +1,14 @@
 <template>
   <div>
-      <show-blogs></show-blogs>
+     <router-view></router-view>
   </div>
 </template>
 <script>
 
-import showBlogs from './components/showBlogs.vue';
+
 
 export default {
   name: 'App',
-  components: {
-    
-    'show-blogs': showBlogs
-  },
   data(){
     return {
 
