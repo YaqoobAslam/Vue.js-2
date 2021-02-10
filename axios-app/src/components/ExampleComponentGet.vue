@@ -27,16 +27,16 @@ export default {
     }
   },
   //Fetches posts when the compoent is created
-  created(){
-    axios.get(`http://jsonplaceholder.typicode.com/posts`)
-    .then(response =>{
-      //JSON responses are automatically parsed.
-      this.posts = response.data;
+  async created(){
+    try{
 
-    })
-    .catch(e =>{
+      const response = await axios.get(`http://jsonplaceholder.typicode.com/posts`)
+      
+        //JSON responses are automatically parsed.
+        this.posts = response.data;
+    }catch(e ){
       this.errors.push(e)
-    })
+    }
   }
 
 }
