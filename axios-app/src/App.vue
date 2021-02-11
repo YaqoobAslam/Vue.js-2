@@ -6,11 +6,11 @@
 
 <script>
 import ExampleComponentGet from './components/ExampleComponentGet.vue'
-
 export default {
   name: 'App',
   components: {
-    ExampleComponentGet
+    ExampleComponentGet,
+  
   }
 }
 </script>

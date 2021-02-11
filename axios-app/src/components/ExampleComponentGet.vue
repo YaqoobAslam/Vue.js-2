@@ -1,23 +1,12 @@
 
 <template>
   <div>
-    <ul v-if="posts && posts.length">
-      <li v-for="post in posts" :key="post">
-        <p>Title: {{post.title}}</p>
-        <p>Body: {{post.body}}</p>
-      </li>
-    </ul>
-
-    <ul v-if="errors && errors.length">
-      <li v-for="error in errors" :key="error">
-        <p>{{error.message}}</p>
-      </li>
-    </ul>
+    <input type="text"/> 
   </div>
 </template>
 
 <script>
-import axios from 'axios';
+import { HTTP } from './http-common';
 
 export default {
   data(){
@@ -26,23 +15,17 @@ export default {
       errors: []
     }
   },
-  //Fetches posts when the compoent is created
-  async created(){
-    try{
-
-      const response = await axios.get(`http://jsonplaceholder.typicode.com/posts`)
-      
-        //JSON responses are automatically parsed.
-        this.posts = response.data;
-    }catch(e ){
+  created() {
+    HTTP.get(`posts`)
+    .then(response =>{
+      this.posts = response.data
+    })
+    .catch(e =>{
       this.errors.push(e)
-    }
+    })
   }
-
 }
 </script>
 
 
-<style scoped>
-
-</style>
+<style scoped></style>
