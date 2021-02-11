@@ -1,23 +1,17 @@
 <template>
-  <div id="app">
-  <b-card title="Cool Weather"
-    img-src="https://picsum.photos/600/300/?image=25"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    display="inline-block;" 
-    class="mb-2">
-    <b-card-text>
-      Some quick example text to build on the card title and make up the bulk of the card's content.
-    </b-card-text>
-    <b-button href="#" variant="primary">Go somewhere</b-button>
-  </b-card> 
+<div id="app">
+<weeks-component></weeks-component>
 </div>
 </template>
 
 <script>
+import weeks from './components/weeks.vue';
+
 export default {
+
+components: {
+  'weeks-component': weeks
+}
 
 }
 </script>
@@ -30,5 +24,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
 }
 </style>
