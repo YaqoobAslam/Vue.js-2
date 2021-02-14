@@ -17,8 +17,10 @@
       <div id="app">
            
         <h2>{{title}}</h2>
-        <button @click="logEvent">Log Event Info</button>
-        <div class="canvas" @mousemove="logCoords">{{coords.x}},  {{coords.y}}</div>
+        <p>My Name is {{name}}</p>
+        <input type="text" @keyup="updataName"/>
+        <input type="text" @keypress="updataName"/>
+
       </div>
 
 

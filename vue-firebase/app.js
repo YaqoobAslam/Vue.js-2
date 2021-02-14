@@ -2,18 +2,13 @@ new Vue({
   el: '#app',
   data: {
     title: 'Becoming Vue Developer',
-    coords: {
-      x: 0,
-      y: 0
-    }
-  },
+    name: 'Yaqoob'
+  },  
   methods: {
-    logEvent(e){
-      console.log(e);
-    },
-    logCoords(e) {
-      this.coords.x = e.offsetX
-      this.coords.y = e.offsetY
+
+    updataName(e) {
+      // console.log(e.target.value);
+      this.name = e.target.value
     }
   }
 
