@@ -6,10 +6,7 @@ new Vue({
   },  
   methods: {
 
-    updataName(e) {
-      // console.log(e.target.value);
-      this.name = e.target.value
-    }
+    
   }
 
 }) 

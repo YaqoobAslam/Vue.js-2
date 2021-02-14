@@ -18,9 +18,7 @@
            
         <h2>{{title}}</h2>
         <p>My Name is {{name}}</p>
-        <input type="text" @keyup="updataName"/>
-        <input type="text" @keypress="updataName"/>
-
+        <input type="text" v-model="name"/>
       </div>
 
 
