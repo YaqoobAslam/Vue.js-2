@@ -2,15 +2,15 @@ new Vue({
   el: '#app',
   data: {
     title: 'Becoming Vue Developer',
-    showName: false,
-    showAge: true
+    items: ['Mushroom', 'Green Shirt','Red Shells','Banana','Star'],
+    ninjas: [
+      {name: 'Crystal', age: 25, belt: 'Black'},
+      {name: 'Ryu', age: 30, belt:'Brown'},
+      {name: 'Yaqoob', age: 20, belt:'Orange'},
+
+    ]
   },  
   methods: {
-    toggleName() {
-      this.showName = !this.showName
-    },
-    toggleAge() {
-      this.showAge = !this.showAge
-    }
+    
   }
 }) 
