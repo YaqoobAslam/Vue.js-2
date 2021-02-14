@@ -2,13 +2,15 @@ new Vue({
   el: '#app',
   data: {
     title: 'Becoming Vue Developer',
-    name: 'Yaqoob'
+    showName: false,
+    showAge: true
   },  
   methods: {
-    logMessage() {
-      console.log('Hello Word!');
+    toggleName() {
+      this.showName = !this.showName
+    },
+    toggleAge() {
+      this.showAge = !this.showAge
     }
-    
   }
-
 }) 
