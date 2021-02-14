@@ -2,6 +2,15 @@
   <head>
     <title>Vue Basics</title>
    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+   <style>
+     .one {
+       color: green;
+     }
+     .two {
+       text-decoration: line-through;
+     }
+   </style>
   </head>
   <body>
       <h1>Vue Basics</h1>
@@ -10,6 +19,7 @@
         <h2>{{title}}</h2>
         <p>{{greet('morning')}}</p>
         <a v-bind:href="url">YouTube</a>
+        <div v-bind:class="classes">Classes from Instance</div>
       </div>
 
 
