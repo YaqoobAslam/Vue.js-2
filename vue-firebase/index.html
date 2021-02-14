@@ -15,12 +15,11 @@
   <body>
       <h1>Vue Basics</h1>
       <div id="app">
-           
         <h2>{{title}}</h2>
-        <p>My Name is {{name}}</p>
-        <input type="text" v-model="name"/>
+        <button @click.alt="logMessage">alt-Click me</button>
+        <button @click.shift="logMessage">shift-Click me</button>
+        <a href="https://www.google.com/" @click.prevent="logMessage" >Google</a>
       </div>
-
 
       <script src="app.js"></script>
   </body>

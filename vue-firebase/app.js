@@ -5,7 +5,9 @@ new Vue({
     name: 'Yaqoob'
   },  
   methods: {
-
+    logMessage() {
+      console.log('Hello Word!');
+    }
     
   }
 
