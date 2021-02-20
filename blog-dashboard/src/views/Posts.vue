@@ -3,6 +3,7 @@
     <!-- <Navbar></Navbar> -->
     <Header></Header>
     <Search></Search>
+    <!-- <AddPostModal></AddPostModal> -->
     <Posts></Posts>
     <!-- <Footer></Footer> -->
   </div>
@@ -13,6 +14,8 @@
 import Header from '../components/Posts/Header'
 import Search from '../components/Posts/Search'
 import Posts from '../components/Posts/Posts'
+// import AddPostModal from '../components/Dashboard/AddPostModal'
+
 // import Footer from '../components/Dashboard/Footer'
 
 export default {
@@ -22,6 +25,8 @@ export default {
     Header,
     Search,
     Posts,
+    // AddPostModal
+
     // Footer
   }
 }

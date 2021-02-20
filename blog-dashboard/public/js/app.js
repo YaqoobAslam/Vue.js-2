@@ -242,7 +242,3 @@ addPostButton.addEventListener('click', function () {
   // TODO: clear select option
 })
 
-
-
-
-
