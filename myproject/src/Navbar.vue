@@ -10,25 +10,24 @@
 
 <script>
 export default {
-  name: 'Navbar',
-  data(){
-    return {
+  name: "Navbar",
+  data() {
+   return {
 
-    }
+   };
   }
-}
+};
 </script>
 <style>
-
-  nav.main-nav{
-    text-align: center;
-  }
-  nav ul {
-    padding: 0;
-  }
-  nav li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-  }
+nav.main-nav {
+  text-align: center;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+}
 </style>
